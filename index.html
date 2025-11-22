@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushpak Bhavsar - Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f0f23, #1a1a2e);
+            color: #e8e8e8;
+            font-family: "Arial", sans-serif;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero {
+            height: 95vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(0,0,0,0.7)),
+                        url('https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_960_720.jpg') center/cover no-repeat;
+            padding-top: 70px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            backdrop-filter: blur(4px);
+            transition: 0.3s ease;
+            height: 100%;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 12px 28px rgba(0, 255, 255, 0.25);
+            border-color: #48CFCB;
+        }
+
+        .project-title {
+            font-size: 22px;
+            color: #48CFCB;
+            font-weight: bold;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Pushpak Bhavsar</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#Mywork" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <h1 class="display-4 fw-bold text-light">Pushpak Kiran Bhavsar</h1>
+        <p class="lead">Software Developer | Data Analytics | Python Developer</p>
+
+        <a href="pushpakbhavsar(DA).pdf" target="_blank" class="btn btn-primary btn-lg mt-3">
+            <i class="fa-solid fa-file"></i> View Resume
+        </a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <p class="text-center">
+            Analytical and detail-oriented Computer Science undergraduate specializing in Artificial Intelligence.
+            Skilled in Python, SQL, Excel, and Power BI with strong fundamentals in data visualization, statistics, 
+            and machine learning. Experienced in building dashboards, automating workflows, and developing predictive 
+            models. Passionate about transforming data into meaningful insights to drive business decisions.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-5 bg-dark">
+    <div class="container">
+        <h2 class="text-center mb-4 text-light">Skills</h2>
+        <div class="row text-center">
+
+            <div class="col-md-3"><strong>Languages:</strong><br>Python, SQL, Java</div>
+            <div class="col-md-3"><strong>Tools:</strong><br>Excel, Power BI, Firebase, Git, GitHub</div>
+            <div class="col-md-3"><strong>Libraries:</strong><br>Pandas, NumPy, OpenCV, Tkinter</div>
+            <div class="col-md-3"><strong>Concepts:</strong><br>Data Analytics, Visualization, AI/ML, DBMS</div>
+
+            <div class="col-md-12 mt-3"><strong>Soft Skills:</strong> Teamwork, Communication, Time Management</div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="Mywork" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4"><i class="fa-solid fa-briefcase"></i> My Projects</h2>
+        <div class="row g-4 justify-content-center">
+
+            <!-- Expense Tracker -->
+            <div class="col-md-4 col-sm-6">
+                <div class="project-card">
+                    <div class="project-title">Expense Tracker</div>
+                    <p class="card-text mt-2">Web-based app to manage income/expenses with categories. Built using HTML, CSS & JS.</p>
+                    <a href="https://pushpakbhavsar.github.io/expense-tracker/" class="btn btn-outline-primary mt-3">Visit Site</a>
+                </div>
+            </div>
+
+            <!-- EV Dashboard -->
+            <div class="col-md-4 col-sm-6">
+                <div class="project-card">
+                    <div class="project-title">Electric Vehicle Analytics Dashboard</div>
+                    <p class="card-text mt-2">Power BI dashboard analyzing EV sales, KPIs, and manufacturer performance.</p>
+                    <a href="https://github.com/Pushpakbhavsar/lectric-Vehicle-Analytics-Dashboard-Power-BI-" class="btn btn-outline-primary mt-3">View Project</a>
+                </div>
+            </div>
+
+            <!-- Art Gallery -->
+            <div class="col-md-4 col-sm-6">
+                <div class="project-card">
+                    <div class="project-title">Art Gallery Website</div>
+                    <p class="card-text mt-2">Website built using HTML, CSS, JS, PHP & SQLite with admin panel for managing artworks.</p>
+                    <a href="https://github.com/Pushpakbhavsar/art-gallary" class="btn btn-outline-primary mt-3">View Project</a>
+                </div>
+            </div>
+
+            <!-- CNN Project -->
+            <div class="col-md-4 col-sm-6">
+                <div class="project-card">
+                    <div class="project-title">Image Classification Using CNN</div>
+                    <p class="card-text mt-2">CNN model (TensorFlow + OpenCV) with GUI for real-time image predictions.</p>
+                    <a href="https://github.com/Pushpakbhavsar/image-classification-" class="btn btn-outline-primary mt-3">View Project</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-5 bg-dark">
+    <div class="container">
+        <h2 class="text-center mb-4 text-light">Experience</h2>
+
+        <div class="p-3">
+            <h5>Sofcon Pvt. Ltd., Pune — Python Developer Intern</h5>
+            <p><em>June 2022 – Aug 2022</em></p>
+            <p>
+                Automated data workflows using Python scripts and REST APIs, improving project efficiency.
+                Debugged automation modules and collaborated with an agile team on data processing and version control.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Education</h2>
+
+        <h5>B.Tech in Computer Science (Artificial Intelligence)</h5>
+        <p>G H Raisoni College of Engineering, Jalgaon (2023–2026) | CGPA: 7.08</p>
+
+        <h5>Diploma in Information Technology</h5>
+        <p>Government Polytechnic, Jalgaon (2020–2023) | 75.13%</p>
+
+        <h5>Secondary School Certificate (SSC)</h5>
+        <p>91.40% | Sarajai Kude Madhyamik Vidyalay (2020)</p>
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="py-5 bg-dark">
+    <div class="container">
+        <h2 class="text-center mb-4 text-light">Certifications</h2>
+
+        <h5>Oracle Cloud Infrastructure 2025 Generative AI Professional (1Z0-1127-25)</h5>
+        <a href="https://drive.google.com/file/d/1BubikZ0SK2jD0jWOrW7ED42a0ZFF_Rxe/view" target="_blank" class="btn btn-outline-primary mt-3">
+            View Certificate
+        </a>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Contact</h2>
+        <p><strong>Phone:</strong> +91 8767200701</p>
+        <p><strong>Email:</strong> pushpakbhavsar101@gmail.com</p>
+        <p><strong>LinkedIn:</strong> /pushpak-bhavsar-599363271</p>
+        <p><strong>GitHub:</strong> /Pushpakbhavsar</p>
+        <p>Pune, Maharashtra</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center">
+    © 2025 Pushpak Bhavsar — All Rights Reserved
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
